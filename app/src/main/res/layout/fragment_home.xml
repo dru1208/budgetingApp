@@ -16,10 +16,24 @@
             android:layout_height="match_parent"
             android:text="@string/welcome_to_my_budget_app" />
         <Button
+            android:id="@+id/week_spending_navigation_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/weekly_spending"
             />
+        <Button
+            android:id="@+id/add_expense_navigation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_expense"
+            />
+        <Button
+            android:id="@+id/expense_list_navigation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_all_expenses"
+            />
+
 
     </LinearLayout>
 

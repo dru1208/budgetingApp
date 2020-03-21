@@ -10,5 +10,39 @@
         android:id="@+id/home"
         android:name="com.example.budgetingapp.Home"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_addExpense"
+            app:destination="@id/addExpense" />
+        <action
+            android:id="@+id/action_home_to_expenseList"
+            app:destination="@id/expenseList" />
+        <action
+            android:id="@+id/action_home_to_weeklySpending"
+            app:destination="@id/weeklySpending" />
+    </fragment>
+    <fragment
+        android:id="@+id/weeklySpending"
+        android:name="com.example.budgetingapp.WeeklySpending"
+        android:label="fragment_weekly_spending"
+        tools:layout="@layout/fragment_weekly_spending" />
+    <fragment
+        android:id="@+id/addExpense"
+        android:name="com.example.budgetingapp.AddExpense"
+        android:label="fragment_add_expense"
+        tools:layout="@layout/fragment_add_expense" />
+    <fragment
+        android:id="@+id/expenseList"
+        android:name="com.example.budgetingapp.ExpenseList"
+        android:label="fragment_expense_list"
+        tools:layout="@layout/fragment_expense_list" >
+        <action
+            android:id="@+id/action_expenseList_to_editExpense"
+            app:destination="@id/editExpense" />
+    </fragment>
+    <fragment
+        android:id="@+id/editExpense"
+        android:name="com.example.budgetingapp.editExpense"
+        android:label="fragment_edit_expense"
+        tools:layout="@layout/fragment_edit_expense" />
 </navigation>
