@@ -40,12 +40,26 @@ class Home : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
+        setUpNavigationButtons(view = view)
+
+        return view
+    }
+
+    private fun setUpNavigationButtons(view: View) {
         val weeklySpendingButton = view.findViewById<Button>(R.id.week_spending_navigation_button)
         weeklySpendingButton.setOnClickListener {
-            println("!!! clicked")
             findNavController().navigate(R.id.weeklySpending)
         }
-        return view
+
+        val addExpenseButton = view.findViewById<Button>(R.id.add_expense_navigation_button)
+        addExpenseButton.setOnClickListener {
+            findNavController().navigate(R.id.addExpense)
+        }
+
+        val expenseListButton = view.findViewById<Button>(R.id.expense_list_navigation_button)
+        expenseListButton.setOnClickListener {
+            findNavController().navigate(R.id.expenseList)
+        }
     }
 
     companion object {
