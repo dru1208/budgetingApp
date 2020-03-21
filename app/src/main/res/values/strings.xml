@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Budgeting App</string>
+    <string name="welcome_to_my_budget_app">Welcome to my budget app</string>
+    <string name="weekly_spending">Weekly Spending</string>
+</resources>
